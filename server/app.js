@@ -3,7 +3,7 @@ const graphqlHTTP = require("express-graphql").graphqlHTTP;
 const schema = require("./schema")
 const mongoose = require("mongoose");
 
-mongoose.connect("mongodb+srv://partht:test1234@cluster0.75jdx.mongodb.net/graphql-db?retryWrites=true&w=majority");
+mongoose.connect("mongodb+srv://partht:*****@cluster0.75jdx.mongodb.net/graphql-db?retryWrites=true&w=majority"); 
 mongoose.connection.once("open",()=>{
 	console.log("connected to db");
 })
